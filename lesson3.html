@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COBOL</title>
+    <title>COBOL - Lesson 3</title>
     <style>
         body {
             background-color: lightblue;
@@ -26,7 +26,7 @@
             padding: 10px;
             border: 2px dashed lime;
             background-color: cornflowerblue;
-            zoom: 0.75; /* Scale down to 75% without layout gap */
+            zoom: 0.75;
         }
         .project-content[style*="display: block"] {
             display: block;
@@ -54,9 +54,6 @@
         .nav-btn:hover {
             background-color: darkorchid;
         }
-        .nav-placeholder {
-            width: 130px;
-        }
         .footer {
             margin-top: 20px;
             color: magenta;
@@ -67,18 +64,12 @@
         function toggleProject(id) {
             const content = document.getElementById(id);
             const allProjects = document.querySelectorAll('.project-content');
-
-            // Close all other projects
             allProjects.forEach(project => {
                 if (project.id !== id) {
                     project.style.display = 'none';
                 }
             });
-
-            // Toggle the selected project
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
-
-            // Scroll to the top of the selected project if opened
             if (content.style.display === 'block') {
                 content.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
@@ -88,8 +79,8 @@
 <body>
     <div class="nav-bar">
         <a href="index.html" class="nav-btn">&#x2190; Home</a>
-        <h1>TEAM COBOL - LESSON 2</h1>
-        <a href="lesson3.html" class="nav-btn">Lesson 3 &#x279C;</a>
+        <h1>TEAM COBOL - LESSON 3</h1>
+        <a href="lesson4.html" class="nav-btn">Lesson 4 &#x279C;</a>
     </div>
 
     <h2 onclick="toggleProject('project1')">DEMO 1: Hello Class</h2>
