@@ -1,1 +1,1 @@
-Website to teach programming languages and implementations class about cobol
+This project is a website created to help students in the Programming Languages and Implementations course learn COBOL through interactive exercises and practice problems. The site provides hands-on activities that allow students to practice reading, writing, and understanding COBOL programs.
